@@ -8,7 +8,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 <head th:fragment="head">
-    <title> Árboles</title>
+    <link rel="stylesheet" href="src/main/resources/static/css/css.css">
+    <title>Árboles</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
@@ -21,9 +22,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 <body th:fragment="body" class="d-flex flex-column" style="min-height: 100vh;">
     
     <header th:fragment="header">
-        <nav class="navbar bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a th:href="@{/}" class="navbar-brand">Tienda Arboles</a>
+                <a th:href="@{/}" class="navbar-brand">Tienda Árboles</a>
                 <ul class="navbar-nav d-flex flex-row">
                     <li class="nav-item px-2">
                         <a class="nav-link" th:href="@{/arbol/listado}">Árboles</a>
@@ -31,21 +32,23 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 </ul>
             </div>
         </nav>
+         <h1 class="display-4 mb-4">Bienvenido a Tienda Josef</h1> 
     </header>
+   
     
     <main th:fragment="main" class="flex-grow-1 d-flex flex-column justify-content-center align-items-center text-center" style="background-color: beige; padding: 20px;">
         <div class="container">
-            <h1 class="display-4 mb-4">Bienvenido a Tienda Josef</h1>
+            
             <p class="lead mb-4">Tu tienda especializada en árboles</p>
-            <img th:src="@{/images/arboles.jpg}" alt="Imagen de árboles" class="rounded-4" style="max-width: 40%; height: auto;"  
+            <img th:src="@{/images/arboles.jpg}" alt="Imagen de árboles" class="rounded-4" style="max-width: 40%; height: auto;">
         </div>
     </main>
     
-    <footer th:fragment="footer" class="footer-custom mt-auto p-3">
+    <footer th:fragment="footer" class="mt-auto p-3" style="background-color: #343a40; color: white;">
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <p class="mb-0">&copy; 2025 Tienda de Arboles - Todos los derechos reservados.</p>
+                    <p class="mb-0">&copy; 2025 Tienda de Árboles - Todos los derechos reservados.</p>
                 </div>
             </div>
         </div>
