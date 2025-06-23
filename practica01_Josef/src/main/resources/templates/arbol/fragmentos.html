@@ -17,19 +17,18 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <section th:fragment="botonesAgregar" class="py-4 mb-4 bg-white shadow-sm">
             <div class="container d-flex justify-content-start">
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#agregarArbol">
-                    <i class="fas fa-tree"></i> Agregar árbol
+                    Agregar árbol
                 </button>
             </div>
         </section>
 
         <!-- Modal para agregar árbol -->
-
         <section th:fragment="agregarArbol">
             <div id="agregarArbol" class="modal fade" tabindex="-1" aria-labelledby="agregarArbolLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content">
                         <div class="modal-header bg-primary text-white">
-                            <h5 class="modal-title"><i class="fas fa-seedling"></i> Agregar Árbol</h5>
+                            <h5 class="modal-title">Agregar Árbol</h5>
                             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                         </div>
                         <form th:action="@{/arbol/guardar}" th:object="${arbol}" method="POST" class="was-validated p-3" enctype="multipart/form-data" novalidate>
@@ -68,7 +67,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                             </div>
                             <div class="modal-footer">
                                 <button class="btn btn-primary" type="submit">
-                                    <i class="fas fa-save"></i> Guardar
+                                    Guardar
                                 </button>
                             </div>
                         </form>
