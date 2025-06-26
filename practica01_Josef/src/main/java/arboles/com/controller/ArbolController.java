@@ -3,14 +3,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-package tienda.com.controller;
+package arboles.com.controller;
 
 /**
  *
  * @author XPC
  */
-import tienda.com.domain.Arbol;
-import tienda.com.service.ArbolService;
+import arboles.com.domain.Arbol;
+import arboles.com.service.ArbolService;
 // import tienda.com.service.impl.FirebaseStorageServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

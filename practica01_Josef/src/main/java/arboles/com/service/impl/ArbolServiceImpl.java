@@ -3,15 +3,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-package tienda.com.service.impl;
+package arboles.com.service.impl;
 
 /**
  *
  * @author XPC
  */
-import tienda.com.dao.ArbolDao;
-import tienda.com.domain.Arbol;
-import tienda.com.service.ArbolService;
+import arboles.com.dao.ArbolDao;
+import arboles.com.domain.Arbol;
+import arboles.com.service.ArbolService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

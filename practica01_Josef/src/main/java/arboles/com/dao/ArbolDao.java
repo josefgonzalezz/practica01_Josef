@@ -3,13 +3,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
  */
 
-package tienda.com.dao;
+package arboles.com.dao;
 
 /**
  *
  * @author XPC
  */
-import tienda.com.domain.Arbol;
+import arboles.com.domain.Arbol;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ArbolDao extends JpaRepository<Arbol, Long> {
